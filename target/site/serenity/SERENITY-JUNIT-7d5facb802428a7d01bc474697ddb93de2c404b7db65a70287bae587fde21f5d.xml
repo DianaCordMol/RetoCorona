@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Agregar producto al carrito" skipped="0" tests="1" time="0.91" timestamp="2022-12-08 11:22:06"><testcase name="Producto-agregado-al-carrito-con-exito"><failure message="Undefined default URL for page object PageObject" type="java.lang.AssertionError">Undefined default URL for page object PageObject</failure><system-err>Undefined default URL for page object PageObject&#13;
 co.corona.steps.PaginaPrincipalStep.abrirNavegador(PaginaPrincipalStep.java:22)&#13;
-co.corona.stepDefinitions.PrincipalStepDefinition.queElUsuarioSeEncuentraEnLaPagina(PrincipalStepDefinition.java:18)&#13;
+co.corona.stepDefinitions.AgregarStepDefinition.queElUsuarioSeEncuentraEnLaPagina(PrincipalStepDefinition.java:18)&#13;
 ✽.Que el usuario se encuentra en la pagina(src/test/resources/features/agregarCarrito.feature:8)&#13;
 </system-err></testcase></testsuite>

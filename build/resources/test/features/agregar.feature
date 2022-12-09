@@ -1,7 +1,7 @@
 #language: es
 Característica: AgregarProducto
 
-  @AgregarAlCarrito
+  @Agregar
 
   Escenario: Producto agregado al carrito con exito
 

@@ -10,9 +10,10 @@ import net.thucydides.core.annotations.Steps;
 import java.io.IOException;
 
 
-public class PrincipalStepDefinition {
+public class AgregarStepDefinition {
 
-    PaginaInicioStep paginaInicioStep = new PaginaInicioStep();
+    @Steps
+    PaginaInicioStep paginaInicioStep;
 
     @Dado("^Que el usuario se encuentra en la pagina$")
     public void queElUsuarioSeEncuentraEnLaPagina() throws IOException{
@@ -22,10 +23,14 @@ public class PrincipalStepDefinition {
 
     @Cuando("^El desee comprar un producto y lo elija$")
     public void elDeseeComprarUnProductoYLoElija() throws IOException{
+        paginaInicioStep.clickLnkProductos();
+        paginaInicioStep.navegarProducto();
+        paginaInicioStep.agregarAlCarrito();
     }
 
     @Entonces("^Se visualizara el producto en el carrito$")
     public void seVisualizaraElProductoEnElCarrito() throws IOException{
+        paginaInicioStep.mensajeExitoso();
     }
 
 

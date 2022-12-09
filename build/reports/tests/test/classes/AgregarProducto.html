@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.061s</div>
+<div class="counter">1m8.08s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,33 +61,16 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
+<a href="#tab1">Standard output</a>
 </li>
 <li>
 <a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="Producto agregado al carrito con exito"></a>
-<h3 class="failures">Producto agregado al carrito con exito</h3>
-<span class="code">
-<pre>java.lang.NullPointerException
-	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:902)
-	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:803)
-	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:791)
-	at co.corona.steps.PaginaInicioStep.abrirNavegador(PaginaInicioStep.java:20)
-	at co.corona.stepDefinitions.PrincipalStepDefinition.queElUsuarioSeEncuentraEnLaPagina(PrincipalStepDefinition.java:19)
-	at ✽.Que el usuario se encuentra en la pagina(src/test/resources/features/agregarCarrito.feature:8)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -98,27 +81,42 @@
 </tr>
 </thead>
 <tr>
-<td class="failures">Producto agregado al carrito con exito</td>
-<td class="failures">1.061s</td>
-<td class="failures">failed</td>
+<td class="success">Producto agregado al carrito con exito</td>
+<td class="success">1m8.08s</td>
+<td class="success">passed</td>
 </tr>
 </table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>el texto es: Agregado a tu carrito para envío
+</pre>
+</span>
 </div>
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
+<pre>dic. 09, 2022 3:59:05 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized --incogni..., goog:chromeOptions: {args: [--start-maximized, --incognito, --disable-notifications, --lang=en-us, --ignore-certificate-errors], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 2914
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+dic. 09, 2022 3:59:08 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
 
-TEST FAILED WITH ERROR: Producto agregado al carrito con exito
----------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Dado Que el usuario se encuentra en la pagina
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+TEST PASSED: Producto agregado al carrito con exito
+----------------------------------------------------------------------------
 </pre>
 </span>
 </div>
@@ -130,7 +128,7 @@ TEST FAILED WITH ERROR: Producto agregado al carrito con exito
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at 8/12/2022, 11:43:06 p. m.</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at 9/12/2022, 4:00:17 a. m.</p>
 </div>
 </div>
 </body>
