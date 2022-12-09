@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="AgregarProducto" skipped="0" tests="1" time="1.0" timestamp="2022-12-08 11:43:02"><testcase name="Producto agregado al carrito con exito"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+co.corona.steps.PaginaInicioStep.abrirNavegador(PaginaInicioStep.java:20)&#13;
+co.corona.stepDefinitions.PrincipalStepDefinition.queElUsuarioSeEncuentraEnLaPagina(PrincipalStepDefinition.java:19)&#13;
+✽.Que el usuario se encuentra en la pagina(src/test/resources/features/agregarCarrito.feature:8)&#13;
+</system-err></testcase></testsuite>
